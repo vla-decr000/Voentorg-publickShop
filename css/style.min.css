@@ -1152,6 +1152,15 @@ button {
   display: none !important;
 }
 
+.slick-initialized .slick-slide {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}
 .header {
   padding: 0 30px;
   background: #1A2737;
@@ -1702,6 +1711,37 @@ button {
 }
 .contacts__send-btn:hover {
   background: #659EF3;
+}
+
+.burger {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  z-index: 100;
+  height: 100vh;
+  align-items: center;
+}
+.burger__inner {
+  color: #FFFFFF;
+}
+.burger__nav-link {
+  display: block;
+  text-align: center;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  background: #1A2737;
+}
+.burger__cross {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+}
+
+.burger--active {
+  display: flex;
 }
 
 @media (max-width: 530px) {
